@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>refute_${1|empty,equal,in_delta,in_epsilon,includes,instance_of,kind_of,match,nil,operator,respond_to,same|}</string>
+	<key>name</key>
+	<string>Refutes - Unit Test</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>ref</string>
+	<key>uuid</key>
+	<string>769753F7-FB49-48E0-B674-DBC3DA533ABC</string>
+</dict>
+</plist>

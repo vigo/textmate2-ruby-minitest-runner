@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>wont_${1|be_empty,equal,be_within_delta,be_close_to,be_within_epsilon,include,be_instance_of,be_kind_of,match,be_nil,be,respond_to,be_same_as|}</string>
+	<key>name</key>
+	<string>Refutes - Spec</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>won</string>
+	<key>uuid</key>
+	<string>1FA82FBA-413E-447C-B221-BF262BB1CC12</string>
+</dict>
+</plist>

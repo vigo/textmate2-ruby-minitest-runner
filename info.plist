@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>hthebmlvyznmry@tznvy.pbz</string>
+	<key>contactName</key>
+	<string>Uğur "vigo" Özyılmazel</string>
+	<key>description</key>
+	<string>Test runner for Ruby by vigo</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>87881785-3572-4BCB-837B-9D5B1E037A6C</string>
+			<string>------------------------------------</string>
+			<string>3577F935-D8E0-48EE-BC1F-1B9D5F48FFB3</string>
+			<string>8B712CE5-0744-4F3D-99E3-DE96276352DA</string>
+		</array>
+		<key>submenus</key>
+		<dict>
+			<key>3577F935-D8E0-48EE-BC1F-1B9D5F48FFB3</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>8B433591-7C0B-4BE3-9E12-2870938854CF</string>
+					<string>769753F7-FB49-48E0-B674-DBC3DA533ABC</string>
+				</array>
+				<key>name</key>
+				<string>Unit Tests</string>
+			</dict>
+			<key>8B712CE5-0744-4F3D-99E3-DE96276352DA</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>84290D82-0E67-4502-94B8-5517D5A154FC</string>
+					<string>1FA82FBA-413E-447C-B221-BF262BB1CC12</string>
+				</array>
+				<key>name</key>
+				<string>Specs</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>name</key>
+	<string>TextMate2 Ruby MiniTest Runner</string>
+	<key>ordering</key>
+	<array>
+		<string>8B433591-7C0B-4BE3-9E12-2870938854CF</string>
+		<string>769753F7-FB49-48E0-B674-DBC3DA533ABC</string>
+		<string>84290D82-0E67-4502-94B8-5517D5A154FC</string>
+		<string>1FA82FBA-413E-447C-B221-BF262BB1CC12</string>
+		<string>87881785-3572-4BCB-837B-9D5B1E037A6C</string>
+	</array>
+	<key>uuid</key>
+	<string>8649B91A-E5B0-47C1-8319-0737252D6E84</string>
+</dict>
+</plist>

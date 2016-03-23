@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>assert_${1|empty,equal,in_delta,in_epsilon,includes,instance_of,kind_of,match,nil,operator,output,raises,respond_to,same,silent,throws|}</string>
+	<key>name</key>
+	<string>Assertions - Unit Test</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>tabTrigger</key>
+	<string>ase</string>
+	<key>uuid</key>
+	<string>8B433591-7C0B-4BE3-9E12-2870938854CF</string>
+</dict>
+</plist>

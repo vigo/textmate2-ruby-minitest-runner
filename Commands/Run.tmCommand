@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby18 -KU
+
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+
+TR_TITLE      = "Ruby MiniTest Runner"
+TR_CSS        = "#{ENV['TM_BUNDLE_SUPPORT']}/css/markdown-github.css"
+TR_CSS_SYNTAX = "#{ENV['TM_BUNDLE_SUPPORT']}/css/syntax-hightlight-github.css"
+
+html_header = [
+  '&lt;html&gt;', '&lt;head&gt;', '&lt;title&gt;', TR_TITLE, '&lt;/title&gt;',
+  "&lt;link rel=\"stylesheet\" href=\"file://#{TR_CSS}\"&gt;",
+  "&lt;link rel=\"stylesheet\" href=\"file://#{TR_CSS_SYNTAX}\"&gt;",
+  '&lt;/head&gt;', '&lt;body&gt;', '&lt;div class="github-gfm"&gt;',
+]
+
+html_footer = [
+  '&lt;/div&gt;', 
+  '&lt;/body&gt;', '&lt;/html&gt;',
+]
+
+project_root_params = {
+  :title =&gt; TR_TITLE,
+  :prompt =&gt; "Please fix your project PATH here",
+  :default =&gt; File.dirname(ENV['TM_DIRECTORY']),
+}
+test_executer_params = {
+  :title =&gt; TR_TITLE,
+  :prompt =&gt; "Is it ok to run this?",
+}
+project_root_request = TextMate::UI.request_string(project_root_params)
+
+if project_root_request &amp;&amp; !project_root_request.empty?
+  project_root = project_root_request
+  
+  test_executer = "bin/rake test"
+  test_executer_params[:default] = test_executer
+  test_executer_params[:default] = "#{test_executer} TESTOPTS=\"--name=#{ENV['TM_SELECTED_TEXT']}\"" unless ENV['TM_SELECTED_TEXT'].nil?
+  test_executer_request = TextMate::UI.request_string(test_executer_params)
+  test_executer = test_executer_request if test_executer_request &amp;&amp; !test_executer_request.empty?
+
+  result = %x[
+    export PATH="$(dirname $TM_RUBY):$PATH" &amp;&amp;
+    cd #{project_root}/ &amp;&amp;
+    #{test_executer}
+  ]
+  
+  puts "#{html_header.join("")}&lt;pre&gt;#{result}&lt;/pre&gt;#{html_footer.join("")}"
+end
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>scope</key>
+	<string>source.ruby</string>
+	<key>uuid</key>
+	<string>87881785-3572-4BCB-837B-9D5B1E037A6C</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
