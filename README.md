@@ -15,14 +15,9 @@ git clone https://github.com/vigo/textmate2-ruby-minitest-runner.git textmate2-r
 
 ## Features
 
-![Open Test File](Screenshots/tm2-rmr-open-test-file.png)
+![Example](Screenshots/example.gif)
 
-![Select root path](Screenshots/tm2-rmr-select-root-path.png)
-
-![Choose runner](Screenshots/tm2-rmr-choose-runner.png)
-
-![Test result](Screenshots/tm2-rmr-test-result.png)
-
+Some screenshots are available under `Screenshots/` folder.
 
 ## Available Helpers
 
@@ -119,6 +114,8 @@ Current version: `v0.1.0`
 ***
 
 ## Contribute
+
+PR’s are very welcome!
 
 1. `fork` (https://github.com/vigo/textmate2-ruby-minitest-runner/fork)
 2. Create your `branch` (`git checkout -b my-features`)
