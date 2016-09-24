@@ -21,7 +21,7 @@ Some screenshots are available under `Screenshots/` folder.
 
 ## Available Helpers
 
-Go to you `test/` folder; open your test file and hit `cmd + r`
+Go to you `test/` folder; open your test file and hit `alt (⌥) + cmd (⌘) + R`
 
 
 `ase`: completes;

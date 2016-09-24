@@ -60,7 +60,7 @@ end
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@r</string>
+	<string>~@r</string>
 	<key>name</key>
 	<string>Run</string>
 	<key>outputCaret</key>
