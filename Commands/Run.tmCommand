@@ -34,6 +34,7 @@ test_executer_params = {
   :title =&gt; TR_TITLE,
   :prompt =&gt; "Is it ok to run this?",
 }
+
 project_root_request = TextMate::UI.request_string(project_root_params)
 
 if project_root_request &amp;&amp; !project_root_request.empty?
